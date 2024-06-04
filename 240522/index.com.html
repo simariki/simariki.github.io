@@ -52,7 +52,7 @@
     </div>
   <div class="bg-secondary-subtle text-emphasis-secondary">
   <div class="row">
-    <div class="col-4">
+    <div class="col-4 d-none d-md-block d-lg-block d-xl-block">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="キーワード入力">
         <span class="input-group-btn">
@@ -60,11 +60,26 @@
 	</span>
       </div>
     </div>
-      <div class="col-4"></div>
-      <div class="col"><button type="button" class="btn btn-outline-secondary">マイページ</button></div>
-      <div class="col"><button type="button" class="btn btn-outline-secondary">購入履歴</button></div>
-      <div class="col"><button type="button" class="btn btn-outline-secondary">⚙</button></div>
+
+    <div class="col-7 d-block d-md-none d-lg-none d-xl-none">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="キーワード入力">
+        <span class="input-group-btn">
+		<button type="button" class="btn btn-light">🔍</button>
+	</span>
+      </div>
+    </div>
+      <div class="col-4 d-none d-lg-block d-xl-block"></div>
+      <div class="col d-none d-lg-block d-xl-block"><button type="button" class="btn btn-outline-secondary">マイページ</button></div>
+      <div class="col d-none d-lg-block d-xl-block"><button type="button" class="btn btn-outline-secondary">購入履歴</button></div>
+      <div class="col d-none d-lg-block d-xl-block"><button type="button" class="btn btn-outline-secondary">⚙</button></div>
+
   </div>
+    <div class="row">
+      <div class="col-auto d-xl-none d-lg-none"><button type="button" class="btn btn-outline-secondary">マイページ</button></div>
+      <div class="col-auto d-xl-none d-lg-none"><button type="button" class="btn btn-outline-secondary">購入履歴</button></div>
+        <div class="col-auto d-xl-none d-lg-none"><button type="button" class="btn btn-outline-secondary">⚙</button></div>
+    </div>
     </div>
 
   <div class="btn1 text-white background">
@@ -297,6 +312,7 @@
       </div>
       </div>
 
+
         <div class="col-3 background2 d-none d-sm-none d-md-none d-lg-block d-xl-block">
           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCFbqQaNJVFuLJSCb6uM8_cWKScKW9Br1iBmOBPsk3F4Yv3B1K85THH8x7_Sjn0Vbk_aHdsb1F_mfeCz4JGlIFhjJMvGkIOqTT2edYotSgwJ9QqDedg9Tlr8zEaqDqUYIGT9HI7xi-f4E/s400/ayashii_koukoku_fukugyou.png" class="img-thumbnail" alt="img">
           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCFbqQaNJVFuLJSCb6uM8_cWKScKW9Br1iBmOBPsk3F4Yv3B1K85THH8x7_Sjn0Vbk_aHdsb1F_mfeCz4JGlIFhjJMvGkIOqTT2edYotSgwJ9QqDedg9Tlr8zEaqDqUYIGT9HI7xi-f4E/s400/ayashii_koukoku_fukugyou.png" class="img-thumbnail" alt="img">
@@ -383,40 +399,63 @@
           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCFbqQaNJVFuLJSCb6uM8_cWKScKW9Br1iBmOBPsk3F4Yv3B1K85THH8x7_Sjn0Vbk_aHdsb1F_mfeCz4JGlIFhjJMvGkIOqTT2edYotSgwJ9QqDedg9Tlr8zEaqDqUYIGT9HI7xi-f4E/s400/ayashii_koukoku_fukugyou.png" class="img-thumbnail" alt="img">
 
         </div>
-      <div class="col-3 d-block d-sm-block d-md-block">
-        <div class="pos-f-t">
-          <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-              <h5 class="text-white h4">アクセスアランキング</h5>
-              <span class="text-muted">記事記事記事・・・</span>
-            </div>
-          </div>
-          <nav class="navbar navbar-dark background2">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </nav>
-        </div>
+<div class="col-3 background2 d-block d-lg-none">
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="background2 p-4">
+        <h5 class="text-white h4">あわせて読みたい記事</h5>
+        <span class="text-muted">記事記事記事記事</span>
       </div>
+    </div>
+    <nav class="navbar navbar-dark bg-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+</div>
 </div>
 
     <div class="row background3">
-      <div class="col"><div class="btn btn-secondary text-start">アプリ<br>データ先読みで、電車でもサクサク</div></div>
-      <div class="col"><div class="btn btn-secondary text-start">Facebook<br>共同企画、独自制作コンテンツなどを投稿</div></div>
-      <div class="col"><div class="btn btn-secondary text-start">X（旧Twitter）<br>リアルタイムでニュースを配信</div></div>
-      <div class="col"><div class="btn btn-secondary text-start">news HACK<br>Yahoo!ニュースのオウンドメディア</div></div>
+      <div class="col d-none d-md-block d-lg-block d-xl-block"><div class="btn btn-secondary text-start">アプリ<br>データ先読みで、電車でもサクサク</div></div>
+      <div class="col d-none d-md-block d-lg-block d-xl-block"><div class="btn btn-secondary text-start">Facebook<br>共同企画、独自制作コンテンツなどを投稿</div></div>
+      <div class="col d-none d-md-block d-lg-block d-xl-block"><div class="btn btn-secondary text-start">X（旧Twitter）<br>リアルタイムでニュースを配信</div></div>
+      <div class="col d-none d-md-block d-lg-block d-xl-block"><div class="btn btn-secondary text-start">news HACK<br>Yahoo!ニュースのオウンドメディア</div></div>
+
+      <div class="col d-block d-md-none d-lg-none d-xl-none"><div class="btn btn-secondary text-start">アプリ<br>データ先読みで、電車でもサクサク</div></div>
+      <div class="col d-block d-md-none d-lg-none d-xl-none"><div class="btn btn-secondary text-start">Facebook<br>共同企画、独自制作コンテンツなどを投稿</div></div>
+      </div>
+  <div class="row background3">
+        <div class="col d-block d-md-none d-lg-none d-xl-none"><div class="btn btn-secondary text-start">X（旧Twitter）<br>リアルタイムでニュースを配信</div></div>
+          <div class="col d-block d-md-none d-lg-none d-xl-none"><div class="btn btn-secondary text-start">news HACK<br>Yahoo!ニュースのオウンドメディア</div></div>
+  </div>
+  <br>
+  <div class="row background3">
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">トップ</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">速報</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">ライブ</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">エキスパート</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">オリジナル</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">みんなの意見</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">ランキング</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">有料</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">RSS</a></div>
+    <div class="col d-none d-md-block d-lg-block d-xl-block"><a href="#" class="link-light">ニュース提供社</a></div>
+
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">トップ</a></div>
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">速報</a></div>
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">ライブ</a></div>
+      <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">エキスパート</a></div>
   </div>
   <div class="row background3">
-    <div class="col"><a href="#" class="link-light">トップ</a></div>
-    <div class="col"><a href="#" class="link-light">速報</a></div>
-    <div class="col"><a href="#" class="link-light">ライブ</a></div>
-    <div class="col"><a href="#" class="link-light">エキスパート</a></div>
-    <div class="col"><a href="#" class="link-light">オリジナル</a></div>
-    <div class="col"><a href="#" class="link-light">みんなの意見</a></div>
-    <div class="col"><a href="#" class="link-light">ランキング</a></div>
-    <div class="col"><a href="#" class="link-light">有料</a></div>
-    <div class="col"><a href="#" class="link-light">RSS</a></div>
-    <div class="col"><a href="#" class="link-light">ニュース提供社</a></div>
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">オリジナル</a></div>
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">みんなの意見</a></div>
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">ランキング</a></div>
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">有料</a></div>
+  </div>
+  <div class="row background3">
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">RSS</a></div>
+    <div class="col d-block d-md-none d-lg-none d-xl-none"><a href="#" class="link-light">ニュース提供社</a></div>
   </div>
   <div class="text-center link-primary">
     プライバシーポリシー-プライバシーセンター-利用規約-メディアステートメント-運営方針-著作権-特定商取引法の表示-ご意見・ご要望-ヘルプ・お問い合わせ<br>
