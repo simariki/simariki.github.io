@@ -9,6 +9,10 @@
       width:1170px;
       height:500px;
     }
+    .pixcel2{
+      width:459px;
+      height:400px;
+    }
     .area{
       font-familly:"ゴシック体";
       font-size:30px;
@@ -16,6 +20,14 @@
     .ts{
       font-familly:"ゴシック体";
       font-size:30px;
+    }
+    .map1{
+      width:1120px;
+      height:480px;
+    }
+    .map2{
+      width:459px;
+      height:400px;
     }
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -51,7 +63,8 @@
       </div>
     </div>
     </div>
-    <img src="https://i.gyazo.com/8207b31562f5e1b01bcd9422956b22e1.png" class="pixcel1" alt="image">
+    <img src="https://i.gyazo.com/8207b31562f5e1b01bcd9422956b22e1.png" class="pixcel1 d-none d-sm-block" alt="image">
+  <img src="https://i.gyazo.com/8207b31562f5e1b01bcd9422956b22e1.png" class="pixcel2 d-block d-sm-none" alt="image">
     <br>
   <div class="border-bottom mt-2 mb-2"></div>
   <br>
@@ -74,8 +87,9 @@
 </div>
 
   <h1><span class="text-info bg-dark px-1 rounded">MAP</span></h1>
-  <iframe src="https://www.google.com/maps/d/embed?mid=1GXs1x9ro8i2YSBmoih7V9-wOxsHdPEY&ehbc=2E312F&noprof=1" width="1120" height="480"></iframe>
- </span>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1GXs1x9ro8i2YSBmoih7V9-wOxsHdPEY&ehbc=2E312F&noprof=1" class="map1 d-none d-sm-block"></iframe>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1GXs1x9ro8i2YSBmoih7V9-wOxsHdPEY&ehbc=2E312F&noprof=1" class="map2 d-block d-sm-none"></iframe>
+  </span>
 </div>
 <script src="location.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
