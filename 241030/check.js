@@ -34,4 +34,4 @@ function checkYear() {
         answer.innerHTML = '平年';
     }else
         answer.innerHTML = '平年';
-}
+}　
