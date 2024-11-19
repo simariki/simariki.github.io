@@ -29,16 +29,37 @@ function doFizzBuzz(){
 
     while(i <= 100) {
         if (i % 3 == 0 && i % 5 == 0) {
-            answer.innerHTML += 'FizzBuzz<br>';
+            answer.innerHTML += `FizzBuzz<br>`;
         } else if (i % 3 == 0) {
-            answer.innerHTML += 'Fizz<br>';
+            answer.innerHTML += `Fizz<br>`;
         } else if (i % 5 == 0) {
-            answer.innerHTML += 'Buzz<br>';
+            answer.innerHTML += `Buzz<br>`;
         } else{
-            answer.innerHTML += i+'<br>';
-    }
+            answer.innerHTML += `${i}<br>`;
+            //@のキーをシフト押したときの点である。７のキーではない[`]○  [']×
+        }
         i++;
     }
 }
 
-///+=にすることでなぜすべて表れるのかが分からない　
+///+=にすることでなぜすべて表れるのかが分からない　↓
+//=にしてしまうと「answer.innerHTML」が上書きされて行ってしまう
+
+//解2
+
+function checkFizzBuzz(number){
+    let i = 1;
+    while (i <= 100) {
+        answer.innerHTML += checkFizzBuzz(i);
+        i++;
+    }
+    if (i % 3 == 0 && i % 5 == 0) {
+        return `FizzBuzz<br>`;
+    } else if (i % 3 == 0) {
+        return `Fizz<br>`;
+    } else if (i % 5 == 0) {
+        return `Buzz<br>`;
+    } else{
+        return `${i}<br>`;
+    }
+}
