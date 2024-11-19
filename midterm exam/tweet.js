@@ -8,7 +8,6 @@ while(i < tweets.length){
     html += `<div class="clearfix border border-secondary me-2 p-2">
         <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
         <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
-    </div>
     </div>`
     i++;
 }
@@ -22,7 +21,6 @@ function All() {
         html += `<div class="clearfix border border-secondary me-2 p-2">
         <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
         <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
-    </div>
     </div>`
         i++;
     }
@@ -42,7 +40,6 @@ function BOT(三郎BOT){
             html += `<div class="clearfix border border-secondary me-2 p-2">
         <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
         <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
-    </div>
     </div>`
         }
         i++;
@@ -62,7 +59,6 @@ function tarou(太郎){
             html += `<div class="clearfix border border-secondary me-2 p-2">
         <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
         <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
-    </div>
     </div>`
         }
         i++;
@@ -82,7 +78,6 @@ function jiro(次郎){
             html += `<div class="clearfix border border-secondary me-2 p-2">
         <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
         <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
-    </div>
     </div>`
         }
         i++;
