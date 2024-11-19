@@ -1,7 +1,9 @@
 
 let answer =document.querySelector("#answer");
-let html = '';
+
 let i =0;
+answer.innerHTML ="";
+let html = "";
 while(i < tweets.length){
     html += `<div class="clearfix border border-secondary me-2 p-2">
         <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
@@ -12,11 +14,11 @@ while(i < tweets.length){
 }
 answer.innerHTML = `${html}`;
 
-
 function All() {
+    let i =0;
     answer.innerHTML ="";
-    html = "";
-    if(i < tweets.length){
+     html = "";
+    while(i < tweets.length){
         html += `<div class="clearfix border border-secondary me-2 p-2">
         <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
         <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
@@ -27,24 +29,63 @@ function All() {
     answer.innerHTML = `${html}`;
     }
 
-function BOT() {
+
+//三郎BOTのボタンが押されたとき
+function BOT(三郎BOT){
+     html = "";
+    //html関数の初期化をすることで、前回の文をリセットする
+     i = 0;
     answer.innerHTML = "";
-    html = "";
-    if (tweets.length == 0) {
-        html += `<div class="clearfix border border-secondary me-2 p-2">
-        <div class="float-start border me-2"><img src="${tweets[0].avatar}" class="tweets-photo" alt="png"></div>
-        <b>${tweets[0].name}</b> ${tweets[0].message} <div class="tweets-At">${tweets[0].tweetedAt}</div>
-    </div>
-    }else if(tweets.length == 4){
-    <div class="clearfix border border-secondary me-2 p-2">
-    <div class="float-start border me-2"><img src="${tweets[4].avatar}" class="tweets-photo" alt="png"></div>
-        <b>${tweets[4].name}</b> ${tweets[4].message} <div class="tweets-At">${tweets[4].tweetedAt}</div>
-    </div>
-    <div class="clearfix border border-secondary me-2 p-2">
-    <div class="float-start border me-2"><img src="${tweets[10].avatar}" class="tweets-photo" alt="png"></div>
-        <b>${tweets[10].name}</b> ${tweets[10].message} <div class="tweets-At">${tweets[10].tweetedAt}</div>
+    while (i < tweets.length) {
+        if (tweets[i].name === "三郎BOT") {
+            //i（0~10行）の中で、指定された名前と一致した場合に動作する
+            html += `<div class="clearfix border border-secondary me-2 p-2">
+        <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
+        <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
     </div>
     </div>`
-        answer.innerHTML = `${html}`;
+        }
+        i++;
     }
+    answer.innerHTML = `${html}`;
+}
+
+//太郎のボタンが押されたとき
+function tarou(太郎){
+     html = "";
+    //html関数の初期化をすることで、前回の文をリセットする
+     i = 0;
+    answer.innerHTML = "";
+    while (i < tweets.length) {
+        if (tweets[i].name === "太郎") {
+            //i（0~10行）の中で、指定された名前と一致した場合に動作する
+            html += `<div class="clearfix border border-secondary me-2 p-2">
+        <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
+        <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
+    </div>
+    </div>`
+        }
+        i++;
+    }
+    answer.innerHTML = `${html}`;
+}
+
+//次郎のボタンが押されたとき
+function jiro(次郎){
+     html = "";
+    //html関数の初期化をすることで、前回の文をリセットする
+     i = 0;
+    answer.innerHTML = "";
+    while (i < tweets.length) {
+        if (tweets[i].name === "次郎") {
+            //i（0~10行）の中で、指定された名前と一致した場合に動作する
+            html += `<div class="clearfix border border-secondary me-2 p-2">
+        <div class="float-start border me-2"><img src="${tweets[i].avatar}" class="tweets-photo" alt="png"></div>
+        <b>${tweets[i].name}</b> ${tweets[i].message} <div class="tweets-At">${tweets[i].tweetedAt}</div>
+    </div>
+    </div>`
+        }
+        i++;
+    }
+    answer.innerHTML = `${html}`;
 }
