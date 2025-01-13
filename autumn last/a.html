@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>最終課題</title>
+  <link rel="stylesheet" href="a.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<div id="splash-screen" class="splash-screen">
+  <img src="https://www.teu.ac.jp/koukaton/images/lead-img1.jpg" class="koukaton" alt="Splash Image">
+  <br>
+  <h1 class="TUT">Welcome to Tokyo Universal of Technology</h1>
+  <img src="https://www.teu.ac.jp/koukaton/images/lead-img1.jpg" class="koukaton" alt="Splash Image">
+</div>
+
+<h1 class="title">キャンパス周辺施設紹介</h1>
+<!-- スライドの外枠 -->
+<div class="slide-wrapper">
+  <!-- スライド（コンテンツ） -->
+  <div id="slide" class="slide">
+    <div>
+      <img src="https://img.activityjapan.com/wi/takaosan-autumn-leaves_thumb.jpg?202409111035&cf_origin">
+    </div>
+    <div>
+      <img src="https://hachioji.ryusenjinoyu.com/wp/wp-content/themes/mori_wp/img/top_img.jpg">
+    </div>
+    <div>
+      <img src="https://travel.rakuten.co.jp/mytrip/sites/mytrip/files/styles/main_image/public/2023-08/puroland-guide-01.jpg?itok=CB72vWfQ">
+    </div>
+    <div>
+      <img src="https://www.ikea.com/images/ikea-li4-chuan1-wai4-guan1-cced77d19fe5a50c94504df90679c71e.jpg?f=xl">
+    </div>
+    <div>
+      <img src="https://mangapark.jp/img/page/about/history/img01.jpg">
+    </div>
+  </div>
+  <!-- 左右のボタン -->
+  <span id="prev" class="prev"></span>
+  <span id="next" class="next"></span>
+  <!-- インジケーター -->
+  <ul class="indicator" id="indicator">
+    <li class="list"></li>
+    <li class="list"></li>
+    <li class="list"></li>
+    <li class="list"></li>
+    <li class="list"></li>
+  </ul>
+</div>
+<br>
+</div>
+<div class="container">
+  <h4 class="text-center text-white bg-secondary w-10 h-10">東京工科大学八王子キャンパス周辺にある施設を紹介！！</h4>
+  <br>
+  <button onclick="All()" class="btn btn-secondary">全て</button>
+  <button onclick="amusement()" class="btn btn-secondary">遊び場</button>
+  <button onclick="tourism()" class="btn btn-secondary">観光</button>
+  <button onclick="spa()" class="btn btn-secondary">温泉</button>
+  <button onclick="shopping()" class="btn btn-secondary">買い物</button>
+  <button onclick="another()" class="btn btn-secondary">その他</button>
+  <br>
+  <div id="answer"></div>
+
+<br>
+  <div class="border-bottom"></div>
+  <div class="text-opacity-50 text-end">1/14更新</div>
+</div>
+<script type="text/javascript" src="places.js"></script>
+<script type="text/javascript" src="a.js"></script>
+</body>
+</html>
