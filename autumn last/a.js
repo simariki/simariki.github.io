@@ -21,6 +21,7 @@ while(i < places.length){
         <div class="float-start border me-2"><img src="${places[i].img}" class="photo" alt="png"></div>
         <h2>${places[i].name}</h2><br>  <h5>場所:${places[i].where}<br>営業時間:${places[i].time}</h5>
         <h5>公式サイト：<button type="Button" class="btn btn-info" onclick="window.location.href='${places[i].link}';">ここをクリック！！</button></h5>
+        <br><div class="text-success"><h5>一言コメント：${places[i].comment}</h5></div>
     </div>`
     i++;
 }
@@ -35,6 +36,7 @@ function All() {
         <div class="float-start border me-2"><img src="${places[i].img}" class="photo" alt="png"></div>
         <h2>${places[i].name}</h2><br>  <h5>場所:${places[i].where}<br>営業時間:${places[i].time}</h5>
         <h5>公式サイト：<button type="Button" class="btn btn-info" onclick="window.location.href='${places[i].link}';">ここをクリック！！</button></h5>
+        <br><div class="text-success"><h5>一言コメント：${places[i].comment}</h5></div>
     </div>`
         i++;
     }
@@ -55,6 +57,7 @@ function amusement(){
         <div class="float-start border me-2"><img src="${places[i].img}" class="photo" alt="png"></div>
         <h2>${places[i].name}</h2><br>  <h5>場所:${places[i].where}<br>営業時間:${places[i].time}</h5>
         <h5>公式サイト：<button type="Button" class="btn btn-info" onclick="window.location.href='${places[i].link}';">ここをクリック！！</button></h5>
+        <br><div class="text-success"><h5>一言コメント：${places[i].comment}</h5></div>
     </div>`
         }
             i++;
@@ -75,6 +78,7 @@ function tourism(){
         <div class="float-start border me-2"><img src="${places[i].img}" class="photo" alt="png"></div>
         <h2>${places[i].name}</h2><br>  <h5>場所:${places[i].where}<br>営業時間:${places[i].time}</h5>
         <h5>公式サイト：<button type="Button" class="btn btn-info" onclick="window.location.href='${places[i].link}';">ここをクリック！！</button></h5>
+       <br><div class="text-success"><h5>一言コメント：${places[i].comment}</h5></div>
     </div>`
         }
         i++;
@@ -95,6 +99,7 @@ function shopping(){
         <div class="float-start border me-2"><img src="${places[i].img}" class="photo" alt="png"></div>
         <h2>${places[i].name}</h2><br>  <h5>場所:${places[i].where}<br>営業時間:${places[i].time}</h5>
         <h5>公式サイト：<button type="Button" class="btn btn-info" onclick="window.location.href='${places[i].link}';">ここをクリック！！</button></h5>
+        <br><div class="text-success"><h5>一言コメント：${places[i].comment}</h5></div>
     </div>`
         }
         i++;
@@ -114,6 +119,7 @@ function spa(){
         <div class="float-start border me-2"><img src="${places[i].img}" class="photo" alt="png"></div>
         <h2>${places[i].name}</h2><br>  <h5>場所:${places[i].where}<br>営業時間:${places[i].time}</h5>
         <h5>公式サイト：<button type="Button" class="btn btn-info" onclick="window.location.href='${places[i].link}';">ここをクリック！！</button></h5>
+        <br><div class="text-success"><h5>一言コメント：${places[i].comment}</h5></div>
     </div>`
         }
         i++;
@@ -134,6 +140,7 @@ function another(){
         <div class="float-start border me-2"><img src="${places[i].img}" class="photo" alt="png"></div>
         <h2>${places[i].name}</h2><br>  <h5>場所:${places[i].where}<br>営業時間:${places[i].time}</h5>
         <h5>公式サイト：<button type="Button" class="btn btn-info" onclick="window.location.href='${places[i].link}';">ここをクリック！！</button></h5>
+        <br><div class="text-success"><h5>一言コメント：${places[i].comment}</h5></div>
     </div>`
         }
         i++;
